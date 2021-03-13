@@ -1,6 +1,6 @@
 ### 自动生成本地自签名SAN域名证书工具
 
-* 原生OpenSSL生成自签名SAN CA域名(V3签名)，
+* 原生OpenSSL生成自签名SAN CA域名(V3签名)，**在Linux、MacOS系统下签发测试通过。**
   用于一键快速生成开发和测试场景证书，内部平台授权和私有DevOps平台搭建。
 * 截至最新版本 Chrome 89.0.4389.90 (x86_64) 版本测试通过。
 * 作者: Jack Liu ljq@Github
