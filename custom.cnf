@@ -1,0 +1,29 @@
+# [Solemn Statement]
+# This script is only for use in the developer's local development test environment, 
+# and is not allowed to be used for other purposes!
+
+[CNF]
+# wildcard doamin name
+DOMAIN_NAME="*.wdft.com" 
+
+# Browser security policy changes(By a date: 2021-03-11):
+# 1.Security Changes in Chrome 58: Common Name Support Dropped. Using SAN instead.
+# 2.Chrome certificates are limited to a maximum of 398 days.
+# The valid 398 days(The days range must be less than or equal to 398 days)
+VALID_DAYS=398
+
+# TLS files generate default current path:
+SAN_TLS_PATH="tls-ca"
+
+# Default SUBJECT info: SUBJECT=/C=/ST=/L=/O=/OU=/CN=/emailAddress=
+# C  => Country Name(Two acronyms)
+# ST => State Name
+# L  => City Name
+# O  => Organization Name
+# OU => Organization Unit Name
+
+SUBJECT.C=CN
+SUBJECT.ST=Shanghai
+SUBJECT.L=Shanghai
+SUBJECT.O=Localhost
+SUBJECT.OU=IT-Dev-Test
