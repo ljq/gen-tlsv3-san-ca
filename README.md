@@ -1,6 +1,7 @@
 ### Auto generate self-signed SAN domain name certificate tool
 
-* Native OpenSSL generates self signed SAN CA domain name (V3 signature)
+* Native OpenSSL generates self signed SAN CA domain name (V3 signature).
+  Generate self-signed SAN CA Domain Name (TLS v3). For a key quickly fast generate development and test environment certificates, internal platform authorization and private DevOps platform build.
 * Up to latest version chrome 89.0.4389.90 (x86_64) test passed.
 * By Jack Liu ljq@Github
 * Statement:
