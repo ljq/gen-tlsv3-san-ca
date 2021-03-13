@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # Generate self-signed SAN CA Domain Name (by openssl extension v3_req)
 # @author Jack Liu ljq@Github
 # Description:
