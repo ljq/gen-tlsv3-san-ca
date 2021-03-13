@@ -79,3 +79,8 @@ SUBJECT.OU=IT-DEV
 #### Client: Import and Install root CA file
 * Download the [domain name]_ca.crt file and import and install,
 * Client certificate management add the trust.
+
+#### The test case
+
+![tls-01.png](https://github.com/ljq/gen-tlsv3-san-ca/blob/main/images/tls-01.png)
+![tls-02.png](https://github.com/ljq/gen-tlsv3-san-ca/blob/main/images/tls-02.png)

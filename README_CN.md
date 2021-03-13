@@ -79,3 +79,9 @@ SUBJECT.OU=IT-DEV
 #### 客户端:导入并安装根CA文件
 * 下载 [主域名]_ca.crt文件,将crt文件导入并安装
 * 客户端证书添加信任。
+
+
+#### 测试用例
+
+![tls-01.png](https://github.com/ljq/gen-tlsv3-san-ca/blob/main/images/tls-01.png)
+![tls-02.png](https://github.com/ljq/gen-tlsv3-san-ca/blob/main/images/tls-02.png)
