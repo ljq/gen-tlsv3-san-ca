@@ -140,6 +140,9 @@ esac
 
 echo -e "${CYAN_BG_COLOR}------------------- [ Task is starting... ] -----------------------${RES}"
 
+# Check openssl installation information
+type openssl >/dev/null 2>&1 || { echo >&2 "OpenSSL it's not installed,Please check for installation."; exit 1; }
+
 # san.cnf init
 san_cnf_init "${DOMAIN_NAME}"
 
