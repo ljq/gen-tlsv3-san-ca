@@ -85,6 +85,7 @@ server {
     # ssl_certificate ${argv_san_tls_absolute_path}/${argv_host_suffix}.pem;
     ssl_certificate ${argv_san_tls_absolute_path}/${argv_host_suffix}.crt;
     ssl_certificate_key ${argv_san_tls_absolute_path}/${argv_host_suffix}.key;
+    ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3;
     keepalive_timeout 100;
 
     ssl_session_cache shared:SSL:10m;
