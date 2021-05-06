@@ -53,9 +53,9 @@ SUBJECT.OU=IT-DEV
 
 ```
 
-#### CA生成文件目录结构示例：
+#### Example of CA file generated file directory structure:：
 
-主域名**wdft.com**为例：
+By the domain name **wdft.com** as an example：
 
 ```
 ├── custom.cnf              # Script custom configuration file
