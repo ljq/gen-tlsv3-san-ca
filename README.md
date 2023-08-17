@@ -80,7 +80,11 @@ By the domain name **wdft.com** as an example：
 
 #### Client: Import and Install root CA file
 * Download the [domain name]_ca.crt file and import and install,
-* Client certificate management add the trust.
+* macOS: Client certificate added trust
+* Windows: Certificate storage -> Place all certificates in the following store -> A trusted root certificate authority
+
+**Tip**: 
+In the Windows operating system, select Trusted Root Certification Authorities for the certificate storage type. By default, the certificate store is automatically selected based on the certificate type, and is not stored and categorized to the root certificate authority. Therefore, you need to manually select the certificate store to be installed on the root certificate authority.
 
 #### The test case
 
