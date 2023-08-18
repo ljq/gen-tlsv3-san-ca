@@ -7,7 +7,7 @@
     - Chrome Version: 116.0.5845.96 (Official Build) (x86_64) passed the test.
     - macOS version: 13.4.1(c)
     - Windows Version: Windows 11 (22H2)
-    - Linux distribution: Ubuntu 22.04 LTS (code name Jammy Jellyfish)
+    - Linux kernel distribution: Ubuntu 22.04 LTS (code name Jammy Jellyfish)
 * By Jack Liu ljq@Github
 * Statement:
     - This script tool is only for developers to build development and test environment, not for other purposes!
