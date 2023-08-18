@@ -3,10 +3,10 @@
 * 原生OpenSSL生成自签名SAN CA域名(V3签名)，**在Linux、MacOS系统下签发测试通过。**
   用于一键快速生成开发和测试场景证书，内部平台授权和私有DevOps平台搭建。
 * 系统测试环境(截至2023.08.18最新版本)：
-  - Chrome Version: 116.0.5845.96 (Official Build) (x86_64) 版本测试通过。
-  - macOS version： 13.4.1(c)
-  - Windows Version: Windows 11 (22H2)
-  - Linux kernel distribution: Ubuntu 22.04 LTS（代号 Jammy Jellyfish）
+  - Chrome 版本: 116.0.5845.96 (Official Build) (x86_64) 版本测试通过。
+  - macOS 版本 13.4.1(c)
+  - Windows 版本: Windows 11 (22H2)
+  - Linux 内核发行版: Ubuntu 22.04 LTS（代号 Jammy Jellyfish）
 * 作者: Jack Liu ljq@Github
 * 声明:
     - 本脚本工具仅供开发人员搭建开发和测试环境，禁止用于其他目的!
