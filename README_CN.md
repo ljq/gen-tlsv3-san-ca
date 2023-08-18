@@ -6,7 +6,7 @@
   - Chrome Version: 116.0.5845.96 (Official Build) (x86_64) 版本测试通过。
   - macOS version： 13.4.1(c)
   - Windows Version: Windows 11 (22H2)
-  - Linux distribution: Ubuntu 22.04 LTS（代号 Jammy Jellyfish）
+  - Linux kernel distribution: Ubuntu 22.04 LTS（代号 Jammy Jellyfish）
 * 作者: Jack Liu ljq@Github
 * 声明:
     - 本脚本工具仅供开发人员搭建开发和测试环境，禁止用于其他目的!
