@@ -1,37 +1,39 @@
 ### Auto generate self-signed SAN domain name certificate tool
 
-* Native OpenSSL generates self signed SAN CA domain name (V3 signature).
+- Native OpenSSL generates self signed SAN CA domain name (V3 signature).
   **In Linux, MacOS system issued the test passed.**
   Generate self-signed SAN CA Domain Name (TLS v3). For a key quickly fast generate development and test environment certificates, internal platform authorization and private DevOps platform build.
-* System Test Environment (as of August 18, 2023, latest version) :
-    - Chrome Version: 116.0.5845.96 (Official Build) (x86_64) passed the test.
-    - macOS version: 13.4.1(c)
-    - Windows Version: Windows 11 (22H2)
-    - Linux kernel distribution: Ubuntu 22.04 LTS (code name Jammy Jellyfish)
-* By Jack Liu ljq@Github
-* Statement:
-    - This script tool is only for developers to build development and test environment, not for other purposes!
-    - Browser security policy change (deadline: March 11, 2021)
-        * 1. Security change of chrome 58: common name support is deleted. Use San.
-        * 2. Chrome certificate is limited to 398 days,more days than this are marked as unsafe.
+- System Test Environment (as of August 18, 2023, latest version) :
+  - Chrome Version: 116.0.5845.96 (Official Build) (x86_64) passed the test.
+  - macOS version: 13.4.1(c)
+  - Windows Version: Windows 11 (22H2)
+  - Linux kernel distribution: Ubuntu 22.04 LTS (code name Jammy Jellyfish)
+- By Jack Liu ljq@Github
+- Statement:
+  - This script tool is only for developers to build development and test environment, not for other purposes!
+  - Browser security policy change (deadline: March 11, 2021)
+    - 1. Security change of chrome 58: common name support is deleted. Use San.
+    - 2. Chrome certificate is limited to 398 days,more days than this are marked as unsafe.
 
 [简体中文](https://github.com/ljq/gen-tlsv3-san-ca/blob/main/README_CN.md)
 
 **Check the open extension support module: v3_req:**
 (It is recommended to resume the closure after the issuance.)
+
 ```
 req_extensions = v3_req # The extensions to add to a certificate request
 ```
 
 **custom.cnf:**
+
 ```
 # [Solemn Statement]
-# This script is only for use in the developer's local development test environment, 
+# This script is only for use in the developer's local development test environment,
 # and is not allowed to be used for other purposes!
 
 [CNF]
 # wildcard doamin name
-DOMAIN_NAME="*.wdft.com" 
+DOMAIN_NAME="*.wdft.com"
 
 # Browser security policy changes(By a date: 2021-03-11):
 # 1.Security Changes in Chrome 58 Version: Common Name Support Dropped. Using SAN instead.
@@ -83,16 +85,21 @@ By the domain name **wdft.com** as an example：
 ```
 
 #### Client: Import and Install root CA file
-* Download the [domain name]_ca.crt file and import and install,
-* macOS: Client certificate added trust
-* Windows: Certificate storage -> Place all certificates in the following store -> A trusted root certificate authority
 
-**Tip**: 
-In the Windows operating system, select Trusted Root Certification Authorities for the certificate storage type. By default, the certificate store is automatically selected based on the certificate type, and is not stored and categorized to the root certificate authority. Therefore, you need to manually select the certificate store to be installed on the root certificate authority.
+- Download the [domain name]\_ca.crt file and import and install,
+- macOS: Client certificate added trust
+- Windows: Certificate storage -> Place all certificates in the following store -> A trusted root certificate authority
+
+**Tip**:
+
+- In the Windows operating system, select Trusted Root Certification Authorities for the certificate storage type. By default, the certificate store is automatically selected based on the certificate type, and is not stored and categorized to the root certificate authority. Therefore, you need to manually select the certificate store to be installed on the root certificate authority.
+- Additional explanation: based on the differences in system browser version and caching mechanism, if it does not take effect, you can try restarting the browser to verify if it takes effect. If the problem still persists, refer to:
+  [issue: 1](https://github.com/ljq/gen-tlsv3-san-ca/issues/1)
 
 #### Precautions for importing the root Certificate Authority (CA) to Mozilla Firefox
 
 ###### Due to the security policy design of Firefox, you need to import the visa from the browser certificate management to the certificate authority to be trusted by the browser. The operations are as follows:
+
 ![firefox-tls.png](https://github.com/ljq/gen-tlsv3-san-ca/blob/main/images/firefox-tls.png)
 
 #### The test case
