@@ -93,7 +93,7 @@ By the domain name **wdft.com** as an example：
 **Tip**:
 
 - In the Windows operating system, select Trusted Root Certification Authorities for the certificate storage type. By default, the certificate store is automatically selected based on the certificate type, and is not stored and categorized to the root certificate authority. Therefore, you need to manually select the certificate store to be installed on the root certificate authority.
-- Additional explanation: based on the differences in system browser version and caching mechanism, if it does not take effect, you can try restarting the browser to verify if it takes effect. If the problem still persists, refer to:
+- Additional explanation: based on the differences in system terminal browser version and caching mechanism, if it does not take effect, you can try restarting the browser to verify if it takes effect. If the problem still exists, refer to:
   [issue: 1](https://github.com/ljq/gen-tlsv3-san-ca/issues/1)
 
 #### Precautions for importing the root Certificate Authority (CA) to Mozilla Firefox
