@@ -9,7 +9,7 @@
   - macOS 版本 13.4.1(c)
   - Windows 版本: Windows 11 (22H2)
   - Linux 内核发行版: Ubuntu 22.04 LTS（代号 Jammy Jellyfish）
-- 作者: Jack Liu ljq@Github
+- 作者: Jaco Liu ljq@Github
 - 声明:
   - 本脚本工具仅供开发人员搭建开发和测试环境，禁止用于其他目的!
   - 浏览器安全策略变更(截止日期:2021-03-11):

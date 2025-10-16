@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Generate self-signed SAN CA Domain Name (by openssl extension v3_req)
-# @author Jack Liu ljq@Github
+# @author Jaco Liu ljq@Github
 # Description:
 #   Quick self-signed CA certificates are used for local development testing.
 # 

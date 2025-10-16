@@ -10,7 +10,7 @@
   - macOS version: 13.4.1(c)
   - Windows Version: Windows 11 (22H2)
   - Linux kernel distribution: Ubuntu 22.04 LTS (code name Jammy Jellyfish)
-- By Jack Liu ljq@Github
+- By Jaco Liu ljq@Github
 - Statement:
   - This script tool is only for developers to build development and test environment, not for other purposes!
   - Browser security policy change (deadline: March 11, 2021)
